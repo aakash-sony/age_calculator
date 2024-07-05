@@ -1,0 +1,98 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to top right, #ff7e5f, #feb47b);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+  color: #444; /* Darker color for better contrast */
+  margin-bottom: 40px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increased spacing for better layout */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #666; /* Slightly darker color for better readability */
+  animation: slideIn 1s ease-in-out;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px; /* Increased padding for better touch targets */
+  box-sizing: border-box;
+  font-size: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  animation: slideIn 1s ease-in-out;
+}
+
+.form-group input:hover {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 10px rgba(255, 126, 95, 0.5); /* Soft glow effect */
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #ff7e5f; /* Matching the gradient color */
+  box-shadow: 0 0 10px rgba(255, 126, 95, 0.5); /* Soft glow effect */
+  outline: none;
+}
+
+button {
+  background-color: #ff7e5f; /* Matching the gradient color */
+  color: #fff;
+  border: none;
+  padding: 12px 25px; /* Slightly larger button */
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 25px; /* Rounded button */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s; /* Added scale effect */
+  animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+  background-color: #feb47b; /* Matching the gradient color */
+  border: black 2px;
+  transform: scale(1); /* Slightly increase size on hover */
+  color: black;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #444; /* Darker color for better contrast */
+  animation: fadeIn 1s ease-in-out;
+}
