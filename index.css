@@ -16,8 +16,8 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(to top right, #ff7e5f, #feb47b);
-  animation: fadeIn 0.5s ease-in-out;
+  background: linear-gradient(to Top right, #ff7e5f, #feb47b);
+  animation: fadeIn 1s ease-in-out;
 }
 
 .container {
@@ -26,13 +26,13 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
   text-align: center;
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 
 h1 {
-  color: #444; /* Darker color for better contrast */
+  color: black; /* Darker color for better contrast */
   margin-bottom: 40px;
-  animation: slideIn 0.5s ease-in-out;
+  animation: slideIn 1s ease-in-out;
 }
 
 .form-group {

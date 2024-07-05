@@ -1,5 +1,11 @@
 function calculateAge() {
+
     const dobInput = document.getElementById('dob').value;
+    const resultElement = document.getElementById('result');
+
+    // Clear previous result
+    resultElement.innerText = ' ';
+
 
     if (!dobInput) {
         alert('Please enter your date of birth.');
@@ -10,6 +16,7 @@ function calculateAge() {
     const today = new Date();
 
     if (dob > today) {
+        resultElement.innerText = ' ';
         alert('The date of birth cannot be in the future.');
         return;
     }
